@@ -5,7 +5,8 @@ This project preprocesses MEA (Microelectrode Array) recordings and classifies d
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Model Architecture](#model-architecture)
-- [Results](#results)
+- [Results second version](#results-second-version)
+- [Results base version](#results-base-version)
 
 ## Project Overview
 This project involves the following steps:
@@ -20,9 +21,9 @@ The model consists of the following layers:
 - LSTM with input size of 64 and hidden size of 128.
 - Fully connected layer for final classification.
 
-## Results
-This version of the model in the 'MNPs classifier' file - classifies each chunk instead of each file and stratifies based on the number of chunks(instead of number of files).
-The attach results are the results of this version on validation set. 
+## Results second version:
+This version of the model in the 'MNPs_Classifier(2)' file - classifies each chunk instead of each file and stratifies based on the number of chunks(instead of number of files).
+The attach results are the results of this version on validation set: 
 
     Validation Loss: 0.0671, Accuracy: 98.1352%
     Confusion matrix on validation set:
@@ -47,11 +48,13 @@ The attach results are the results of this version on validation set.
 
 
 This version had problem with misclassification of a new file:
-Files of "w_oMNPs" files (label 0) classified as "withMNPs" (label 1), along with the prediction confidence hovering around 50%, suggests that the model is not confidently distinguishing between the two classes in new data.
+Files of "w_oMNPs" files (label 0) classified as "withMNPs" (label 1), along with the prediction confidence hovering around 50%,
+suggests that the model is not confidently distinguishing between the two classes in new data.
+
 
 ---
-
-The first version in the 'Project' file got the following results (but succeeded much better in classify a new file):
+## Results base version:
+The first version in the 'MNPs_Classifier(1)' file got the following results (but succeeded much better in classify a new file):
 
     Validation Loss: 0.2518, Accuracy: 92.7778%
     Confusion matrix on validation set:
@@ -76,7 +79,9 @@ The first version in the 'Project' file got the following results (but succeeded
 
 
 New File Classification Results:
+
 Files predicted as w_oMNPs (Class 0):  High confidence, ranging from 0.91 to 0.97.
+
 Files predicted as withMNPs (Class 1): Confidence varies, generally lower for withMNPs predictions (0.83 to 0.92).
  
 ---
