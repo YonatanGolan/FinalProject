@@ -43,7 +43,7 @@ The attach results are the results of this version on validation set.
     
     
     
-![png](README_files/README_30_29.png)
+![png](1.png)
 
 
 This version had problem with misclassification of a new file:
@@ -72,7 +72,7 @@ The first version in the 'Project' file got the following results (but succeeded
     
     
     
-![png](README_files/README_30_19.png)
+![png](2.png)
 
 
 New File Classification Results:
