@@ -44,7 +44,7 @@ The attach results are the results of this version on validation set:
     
     
     
-![png](1.png)
+![png](README_files/1.png)
 
 
 This version had problem with misclassification of a new file:
@@ -75,7 +75,7 @@ The first version in the 'MNPs_Classifier(1)' file got the following results (bu
     
     
     
-![png](2.png)
+![png](README_files/2.png)
 
 
 New File Classification Results:
